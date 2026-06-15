@@ -1,0 +1,13 @@
+#computer-choice {
+    display: inline-block;
+    border: 1px solid black;
+}
+
+#player-choice {
+    border: 1px solid black;
+    display: inline-block;
+}
+#choice-display {
+    display: flex;
+    margin-top: 100px;
+}
