@@ -8,7 +8,7 @@ let displayArea = document.querySelector("#choice-display");
 let resultArea = document.querySelector("#result-area");
 let scoreBoard = document.querySelector("#score-board");
 let restartBtn = document.querySelector("#replay");
-
+let roundWinner = document.querySelector("#round-winner");
 
 
 let computer = document.createElement("h5");
@@ -19,7 +19,7 @@ cdisplay.appendChild(computer);
 
 let result= document.createElement("h3");
 result.textContent = "Round Winner";
-displayArea.append(result);
+roundWinner.append(result);
 
 let humanChoice = document.createElement("h5");
 humanChoice.textContent = "";

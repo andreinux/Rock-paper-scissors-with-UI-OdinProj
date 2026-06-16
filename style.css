@@ -1,18 +1,99 @@
 #computer-choice {
     display: inline-block;
-    border: 1px solid black;
+    
 }
 
 #player-choice {
-    border: 1px solid black;
+    
     display: inline-block;
 }
 #choice-display {
     display: flex;
-    margin-top: 100px;
+  
 }
 
 #result-area {
     border: 1px solid black;
-    margin-top: 50px;
+    margin-top: 5px;
+}
+
+body {
+    background-color:   #111827;
+    color:   #E5E7EB;
+}
+h1 {
+    color:  #000080;
+    background-color:  #A9A9A9;
+    border-radius: 5px;
+}
+h2 {
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    display: flex;
+    width: 150px;
+    height: 70px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "inter";
+    margin: 10px;
+       
+}
+
+.btn:hover {
+    background-color: gray;
+    transform: translateY(-2px);
+    transition: 0.3s ease;  
+
+}
+
+#userInput {
+    display: flex;
+     align-items: center;
+    justify-content: center;
+    
+}
+#para {
+    color: red;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 2rem;
+}
+#rock {
+    color: brown;
+}
+#paper {
+    color: #023e8a;
+}
+#scissors {
+    color: #ff2400;
+}
+#choice-display {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+  
+}
+
+#round-winner {
+    display: flex;
+    flex: 0 0 100%;
+    width: 50px;
+  
+    
+    justify-content: center;
+}
+#paraRW {
+    font-size:25px;
+    
+    
+}
+#player-choice {
+    margin-left: 25px;
 }
