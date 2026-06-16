@@ -18,7 +18,8 @@ cdisplay.appendChild(computer);
 
 
 let result= document.createElement("h3");
-result.textContent = "Round Winner";
+result.textContent = "";
+result.style.fontSize="25px";
 roundWinner.append(result);
 
 let humanChoice = document.createElement("h5");
@@ -32,13 +33,13 @@ let cscore = 0;
 
 
 let score = document.createElement("h4");
-score.textContent = "Player: 0 | Computer: 0";
+score.textContent = "Player: 0 | Tom: 0";
 scoreBoard.appendChild(score);
 
 function updateScore () {
-    score.textContent = `Player: ${hscore} | Computer: ${cscore}`;
+    score.textContent = `Player: ${hscore} | Tom: ${cscore}`;
 }
-let matchWinner = document.createElement("h4");
+let matchWinner = document.createElement("h2")
 resultArea.appendChild(matchWinner);
 
 let gameOver = document.createElement("h4");
@@ -48,14 +49,17 @@ function checkWinner () {
 
 
 if (cscore === 5) {
-    matchWinner.textContent = "Computer Wins The Match GG!";
+    matchWinner.textContent = "Tom Wins The Match GG!";
+    matchWinner.style.color="red"
      rockBtn.disabled = true;
         paperBtn.disabled = true;
         scissorsBtn.disabled = true;
         gameOver.textContent = "GAME OVER, BETTER LUCK NEXT TIME!!";
         
 }else if (hscore === 5) {
-    matchWinner.textContent = "Player Wins The Match GG!";
+    matchWinner.textContent = "You Won The Match GG!";
+    matchWinner.style.color="green";
+
 
      rockBtn.disabled = true;
         paperBtn.disabled = true;
@@ -69,11 +73,11 @@ function getComputerChoice () {
 let computerChoice = Math.floor(Math.random()*3);
 
 if (computerChoice === 0) {
-      computer.textContent = "COMPUTER CHOOSES ROCK";
+      computer.textContent = "TOM CHOOSES ROCK";
 } else if (computerChoice === 1){
-    computer.textContent = "COMPUTER CHOOSES PAPER";
+    computer.textContent = "TOM CHOOSES PAPER";
 }else if (computerChoice === 2){
-    computer.textContent = "COMPUTER CHOOSES SCISSORS";
+    computer.textContent = "TOM CHOOSES SCISSORS";
 } 
 
 return computerChoice;
@@ -87,7 +91,8 @@ rockBtn.addEventListener("click" , () => {
     if (computerChoice === 0) {
         result.textContent = "It's a tie!";
     }else if(computerChoice === 1) {
-        result.textContent = "You Lost the round!"
+        result.textContent = "You Lost the round!";
+
         cscore++;
         updateScore();
         checkWinner();

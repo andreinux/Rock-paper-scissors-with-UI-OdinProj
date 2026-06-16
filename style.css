@@ -12,10 +12,7 @@
   
 }
 
-#result-area {
-    border: 1px solid black;
-    margin-top: 5px;
-}
+
 
 body {
     background-color:   #111827;
@@ -96,4 +93,42 @@ h2 {
 }
 #player-choice {
     margin-left: 25px;
+    border: 2px solid green;
+    border-radius: 5px;
+    padding: 10px;
+}
+#computer-choice {
+    margin-right: 25px;
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 10px;
+}
+#score-board {
+    text-align: center;
+    font-size: 30px;
+}
+#result-area {
+    text-align: center;
+}
+#replay {
+    background-color: green;
+    color: white;
+    font-size: 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: "inter";
+    display:flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+#replay:hover {
+    background-color: #00FF00;
+    transform: translateY(-2px);
+    transition: 0.3s ease;
+}
+#card {
+    border: 5px solid white;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 60%;
 }
